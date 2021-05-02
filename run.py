@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 import pyshorteners
+from termcolor import colored
 
 #input!
 
-url = input(str("enter your url:"))
+url = input(str(colored("enter your url:", "blue")))
 
 #short link function
 def surl():
@@ -15,7 +16,7 @@ def surl():
 #check url
 
 if url[0:4] == "http":
-	print("True")
+	print(colored("True", "green"))
 	surl()
 else:
 	print("url is wrong!")
